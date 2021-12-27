@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-27T02:05:57.152Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36" etag="5KML_W87WZ86C9w4ucRr" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-27T09:31:10.153Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36" etag="ChyiDe7hro6X0lsjtF1D" version="16.0.0" type="github">
   <diagram id="EgEHxzAB7MScCnZNhDTs" name="第 1 页">
     <mxGraphModel dx="2500" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -363,6 +363,117 @@
           <mxGeometry x="0.6303" y="-3" relative="1" as="geometry">
             <mxPoint y="-2" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-3" value="settle_order_pay_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="1340" width="190" height="442" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-4" value="id" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-5" value="order_code               结算订单编号" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="52" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-6" value="biz_order_no         业务订单号" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="78" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-54" value="link_order_code        退款关联正向单" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FF0000;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="104" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-9" value="item_fee                      商品总价" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="130" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-10" value="platform_reduce          平台折扣" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="156" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-11" value="seller_reduce              商户折扣" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="182" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-12" value="actual_item_fee          商品实收/退" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="208" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-13" value="fund_flow                    资金方向" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="234" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-19" value="strike_status               1.待冲账，2已冲账" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="260" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-20" value="strike_time                  冲账时间" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="286" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-21" value="pay_status    分账状态（0,1待分账，2已分账）" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="312" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-57" value="pay_amount               分账总金额" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="338" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-15" value="create_sys_tm" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="364" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-16" value="update_sys_tm" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="390" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-17" value="delete_flag" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-3">
+          <mxGeometry y="416" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="iFQwinCk4Mmocih9_f48-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-31" y="1379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-38" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iFQwinCk4Mmocih9_f48-37">
+          <mxGeometry x="-0.6285" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-39" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iFQwinCk4Mmocih9_f48-37">
+          <mxGeometry x="0.6549" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-40" value="settle_order_calc_extend" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-31" y="1340" width="190" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-41" value="id" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-42" value="order_code               结算订单编号" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="52" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-43" value="biz_order_no             业务订单号" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="78" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-44" value="settle_member_id          结算对象" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="104" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-45" value="settle_member_type  结算对象类型" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="130" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-46" value="settle_amount             结算金额/回退金额" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="156" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-47" value="item_fee                      商品总价" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="182" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-48" value="actual_item_fee          商品实收/退" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="208" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-49" value="fund_flow                    资金方向" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="234" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-50" value="create_sys_tm" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="260" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-51" value="update_sys_tm" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="286" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-52" value="delete_flag" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="iFQwinCk4Mmocih9_f48-40">
+          <mxGeometry y="312" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-53" value="分账明细" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-31" y="1310" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFQwinCk4Mmocih9_f48-55" value="分账/冲账、主表" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="1310" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
